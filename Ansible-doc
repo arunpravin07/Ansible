@@ -10,41 +10,41 @@ now make sure that authorized_keys looks like this
  /root/.ssh/authorized_keys 
 -rw-------. /.ssh/authorized_keys
 
-or just run
+or just run -->
 chmod 0600 /.ssh/authorized_keys
 
 After that go to /etc/ssh/sshd_config
 
-For best security set ==>
+For best security set -->
 PermitRootLogin no
 PubkeyAuthentication yes
 
-keep as yes for testing purposes
+keep as yes for testing purposes -->
 PasswordAuthentication yes
 
-Make sure that
+Make sure that -->
 ChallengeResponseAuthentication no
 
-Comment those lines for GSSAPI
+Comment those lines for GSSAPI -->
 # #GSSAPIAuthentication yes
 # #GSSAPICleanupCredentials no
 
-Make sure that is set to UsePAM yes
+Make sure that is set to UsePAM yes -->
 UsePAM yes
 
-now restart sshd service
+now restart sshd service -->
 systemctl restart sshd 
 
 
 
-on the client side
+on the client side --->
 
 cd /home/your_home/.ssh
 
-generate new keys; setting a password is optional but is a good idea
+generate new keys; setting a password is optional but is a good idea -->
 ssh-keygen -t rsa -b 2048  
 
-copy pub key to your server
+copy pub key to your server -->
 ssh-copy-id -i id_rsa.pub user_name@server_ip
 
 
