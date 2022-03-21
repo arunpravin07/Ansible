@@ -1,7 +1,7 @@
 
-ANSIBLE DOCS
+####################### ANSIBLE DOCS #######################
 
-SSH confi ==>
+####################### SSH config #######################
 
 if it is not looking like this, run
 chmod 0700 /home/your_home/.ssh
@@ -46,3 +46,7 @@ ssh-keygen -t rsa -b 2048
 
 copy pub key to your server
 ssh-copy-id -i id_rsa.pub user_name@server_ip
+
+
+####################### ansible commands #######################
+
