@@ -37,14 +37,16 @@ systemctl restart sshd
 
 
 
-on the client side --->
+on the both sides --->
 
 cd /home/your_home/.ssh
 
 generate new keys; setting a password is optional but is a good idea -->
-ssh-keygen -t rsa -b 2048  
+ssh-keygen -t rsa -b 2048
 
-copy pub key to your server -->
+
+
+copy pub key to your target/source -->
 ssh-copy-id -i id_rsa.pub user_name@server_ip
 
 
