@@ -52,3 +52,9 @@ ssh-copy-id -i id_rsa.pub user_name@server_ip
 
 ####################### ansible commands #######################
 
+
+#The shell module lets us send a terminal command to the remote host and retrieve the results. For instance, to find out the memory usage on 
+our host1 machine, we could use:
+
+ansible -m shell -a 'free -m' host1
+
