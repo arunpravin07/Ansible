@@ -22,4 +22,3 @@
       from: arunpravin012@gmail.com
       subject: Ansible-notify
       body: "Hello bruh !!"
-    delegate_to: localhost
