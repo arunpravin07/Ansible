@@ -19,7 +19,7 @@
       port: 587
       username: arunpravin012@gmail.com
       password: "{{gmail_pwd}}"
-      to: saravanakumar_r@solartis.com
+      to: arunpravin_e@solartis.com
       from: arunpravin012@gmail.com
       subject: Ansible-notify
       body: "Hello bruh !!"
