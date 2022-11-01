@@ -18,9 +18,10 @@
         state: absent
     
     - name: "Stop Nginx Services"
-      service:
-        name: nginx
-        state: stopped
+        shell: systemctl status nginx
+        register: nginx_status
+      - debug: var=nginx_status.stdout_lines
+      
     - name: Ansible notification
       mail:
         host: smtp.gmail.com
