@@ -22,13 +22,13 @@
         name: nginx
         state: stopped
     - name: Ansible notification
-    mail:
-      host: smtp.gmail.com
-      subtype: html
-      port: 587
-      username: arunpravin012@gmail.com
-      password: "{{gmail_pwd}}"
-      to: surya_p@solartis.com
-      from: arunpravin012@gmail.com
-      subject: Ansible-notify
-      body: "Nginx Uninstalled Successfully !!" 
+      mail:
+        host: smtp.gmail.com
+        subtype: html
+        port: 587
+        username: arunpravin012@gmail.com
+        password: "{{gmail_pwd}}"
+        to: surya_p@solartis.com
+        from: arunpravin012@gmail.com
+        subject: Ansible-notify
+        body: "Nginx Uninstalled Successfully !!" 
